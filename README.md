@@ -1,70 +1,32 @@
-# B23DCAT243_Lap-Trinh-Web_Thuc-hanh
-Personal profile website built with React and Vite
+# Good Profile - React
 
-# React Profile Website
+Bài thực hành môn Lập trình Web: xây dựng một trang profile cá nhân bằng React + Vite.
 
-A personal profile website built with React and Vite.
+## Chức năng
+- Trang profile cá nhân theo phong cách gamification
+- Navigation: Home, Sobre, Ranking, Galeria
+- Scroll đến từng khu vực bằng React state
+- Hiển thị thông tin cá nhân, huy hiệu và ranking
+- Nút Logout hiển thị thông báo minh họa
+- Liên kết GitHub và nút Email
+- Responsive trên máy tính và điện thoại
 
-This project is developed for practicing Frontend development with the React framework. The main focus of the project is the structure of a React application, component rendering, state management, event handling, data rendering and CSS-based interface design.
+## Cài đặt
+```bash
+npm install
+npm run dev
+```
 
----
+Mở địa chỉ mà Vite in ra trong terminal, thường là `http://localhost:5173`.
 
-# 1. Project Overview
+## Build bản production
+```bash
+npm run build
+npm run preview
+```
 
-This project is a Frontend application built using React.
+## Thay thông tin cá nhân
+Mở `src/App.jsx`, chỉnh object `profile`, danh sách `badges`, `projects` và `gallery`.
 
-The project does not use a backend or database. Most of the displayed content is defined as JavaScript objects and arrays inside the React application and then rendered dynamically through JSX.
-
-The main technologies used are:
-
-- React
-- JavaScript
-- JSX
-- CSS
-- Vite
-- Node.js
-- npm
-
-The project follows a simple structure suitable for a small React application.
-
----
-
-# 2. Technologies
-
-| Technology | Purpose |
-|---|---|
-| React | Build the user interface |
-| JavaScript | Application logic |
-| JSX | Define the UI structure |
-| CSS | Styling and responsive layout |
-| Vite | Development server and production build |
-| Node.js | Runtime environment for development tools |
-| npm | Dependency and script management |
-| GitHub | Source code hosting |
-
----
-
-# 3. Project Structure
-
-```text
-react-profile-ptit/
-│
-├── public/
-│   └── favicon.svg
-│
-├── src/
-│   ├── assets/
-│   │   ├── adventure-banner.svg
-│   │   └── avatar.svg
-│   │
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-│
-├── .gitignore
-├── index.html
-├── package.json
-├── package-lock.json
-├── vite.config.js
-└── README.md
+## Thay ảnh đại diện
+Thay file `src/assets/avatar.svg` bằng ảnh của bạn và cập nhật import trong `src/App.jsx`.
